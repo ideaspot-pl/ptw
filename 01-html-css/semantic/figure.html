@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Figure (code listing)</title>
+  </head>
+  <body>
+    <p>
+      In <a href="#l4">listing 4</a> we see an example of plotting random data
+      with Python.
+    </p>
+    <figure id="l4">
+      <figcaption>
+        Listing 4. Python script generating 10 random numbers and plotting them.
+      </figcaption>
+      <pre><code>import random
+import matplotlib.pyplot as plt
+xs = list(range(10))
+ys = [random.random() for _ in xs]
+plt.plot(xs, ys, marker='o')
+plt.xlabel('X')
+plt.ylabel('Random value')
+plt.title('Random numbers over X')
+plt.grid(True)
+plt.show()</code></pre>
+    </figure>
+    <p>This script uses matplotlib to visualize random data.</p>
+  </body>
+</html>

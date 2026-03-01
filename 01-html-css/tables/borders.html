@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borders</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; display: flex; flex-wrap: wrap;}
+        div { border: 1px dashed gray; width: 300px; padding: 10px; margin: 10px;}
+        h2 { margin: 0 0 10px 0; }
+        table { width: 100%; }
+    </style>
+</head>
+<body>
+<div>
+    <h2>No border</h2>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Value A1</td>
+            <td>Value B1</td>
+            <td>Value C1</td>
+        </tr>
+        <tr>
+            <td>Value A2</td>
+            <td>Value B2</td>
+            <td>Value C2</td>
+        </tr>
+        <tr>
+            <td>Value A3</td>
+            <td>Value B3</td>
+            <td>Value C3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Table border</h2>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Value A1</td>
+            <td>Value B1</td>
+            <td>Value C1</td>
+        </tr>
+        <tr>
+            <td>Value A2</td>
+            <td>Value B2</td>
+            <td>Value C2</td>
+        </tr>
+        <tr>
+            <td>Value A3</td>
+            <td>Value B3</td>
+            <td>Value C3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Cell border</h2>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A1</td>
+            <td>Value B1</td>
+            <td>Value C1</td>
+        </tr>
+        <tr>
+            <td>Value A2</td>
+            <td>Value B2</td>
+            <td>Value C2</td>
+        </tr>
+        <tr>
+            <td>Value A3</td>
+            <td>Value B3</td>
+            <td>Value C3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Table and cell border</h2>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">Column 1</th>
+            <th style="border: 1px solid black;">Column 2</th>
+            <th style="border: 1px solid black;">Column 3</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A1</td>
+            <td style="border: 1px solid black;">Value B1</td>
+            <td style="border: 1px solid black;">Value C1</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A2</td>
+            <td style="border: 1px solid black;">Value B2</td>
+            <td style="border: 1px solid black;">Value C2</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A3</td>
+            <td style="border: 1px solid black;">Value B3</td>
+            <td style="border: 1px solid black;">Value C3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Border Collapse</h2>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 1px solid black;">Column 1</th>
+            <th style="border: 1px solid black;">Column 2</th>
+            <th style="border: 1px solid black;">Column 3</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A1</td>
+            <td style="border: 1px solid black;">Value B1</td>
+            <td style="border: 1px solid black;">Value C1</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A2</td>
+            <td style="border: 1px solid black;">Value B2</td>
+            <td style="border: 1px solid black;">Value C2</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A3</td>
+            <td style="border: 1px solid black;">Value B3</td>
+            <td style="border: 1px solid black;">Value C3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>Border Separate</h2>
+    <table style="border: 1px solid black; border-collapse: separate;">
+        <tr>
+            <th style="border: 1px solid black;">Column 1</th>
+            <th style="border: 1px solid black;">Column 2</th>
+            <th style="border: 1px solid black;">Column 3</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A1</td>
+            <td style="border: 1px solid black;">Value B1</td>
+            <td style="border: 1px solid black;">Value C1</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A2</td>
+            <td style="border: 1px solid black;">Value B2</td>
+            <td style="border: 1px solid black;">Value C2</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Value A3</td>
+            <td style="border: 1px solid black;">Value B3</td>
+            <td style="border: 1px solid black;">Value C3</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

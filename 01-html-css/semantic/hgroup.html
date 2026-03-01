@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Headings, subheadings, hgroup</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #F4F4F4;
+        }
+        
+        article {
+            background-color: white;
+            padding: 1em;
+        }
+        
+        hgroup {
+            border: 1px dashed silver;
+        }
+    </style>
+</head>
+<body>
+<article>
+    <h1>Title in H1</h1>
+    <h2>Some subtitle in H2</h2>
+    
+    <p>This is bad! H1 has no content at all and immediately H2 starts.</p>
+</article>
+
+<article>
+    <hgroup>
+        <h1>Title in H1</h1>
+        <p>Some subtitle in P</p>
+    </hgroup>
+    
+    <p>This is good! H1 and H2 are grouped together and they are related to each other.</p>
+</article>
+</body>
+</html>

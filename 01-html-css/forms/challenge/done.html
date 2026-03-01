@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms Challenge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 600px;
+            margin: 30px auto;
+            row-gap: 1ex;
+            align-items: center;
+        }
+        
+        label {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 700;
+        }
+        
+        input {
+            font-family: 'Poppins', sans-serif;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<form id="sampleForm" method="post" action="done.html">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" pattern="[a-z][a-z0-9]{2,9}" maxlength="10" placeholder="Lowercase letters and digits." required> 
+
+    <label for="firstname">Firstname</label>
+    <input id="firstname" name="firstname" type="text" required> 
+
+    <label for="lastname">Lastname</label>
+    <input id="lastname" name="lastname" type="text" required> 
+
+    <label for="birthday">Birthday</label>
+    <input id="birthday" name="birthday" type="date" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" placeholder="At least 8 characters." pattern="[a-zA-Z0-9]{8,}" required>
+</form>
+
+<input type="submit" value="Register" form="sampleForm">
+</body>
+</html>

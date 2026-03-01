@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background-Size</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>300x100</p>
+    <div style="
+        background-image: url('../resources/waterfall.jpg');
+        background-size: 100px 100px;">
+    </div>
+
+    <p>Contain</p>
+    <div style="
+        background-image: url('../resources/waterfall.jpg');
+        background-size: contain;">
+    </div>
+
+    <p>Cover</p>
+    <div style="
+        background-image: url('../resources/waterfall.jpg');
+        background-size: cover;">
+    </div>
+</body>
+</html>
