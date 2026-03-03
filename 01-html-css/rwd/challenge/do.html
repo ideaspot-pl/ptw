@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        header, aside, main, footer {
+            flex-basis: 100%;
+            padding: 10px;
+        }
+        header {
+            background-color: #facccc;
+        }
+        aside {
+            background-color: #cdffcd;
+        }
+        main {
+            background-color: #c8c8fc;
+            min-height: 75vh;
+        }
+        footer {
+            background-color: #f8f7aa;
+        }
+        @media (min-width: 420px) {
+            body {
+                flex-direction: row;
+            }
+            aside {
+                flex-basis: 30%;
+            }
+            main {
+                flex-basis: 70%;
+                align-self: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>This is header.</h1>
+</header>
+<aside>
+    <p>This is sidebar.</p>
+</aside>
+<main>
+    <p>This is main content.</p>
+</main>
+<footer>
+    <p>This is footer.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-areas:
+                    "header"
+                    "main"
+                    "aside"
+                    "footer"
+            ;
+            grid-template-columns: auto;
+            grid-template-rows: auto 1fr auto auto;
+            min-height: 90vh;
+        }
+        header, aside, main, footer {
+            padding: 10px;
+        }
+        header {
+            background-color: #facccc;
+            grid-area: header;
+        }
+        aside {
+            background-color: #cdffcd;
+            grid-area: aside;
+        }
+        main {
+            background-color: #c8c8fc;
+            grid-area: main;
+        }
+        footer {
+            background-color: #f8f7aa;
+            grid-area: footer;
+        }
+        @media (min-width: 420px) {
+            body {
+                grid-template-areas:
+                    "header header"
+                    "aside main"
+                    "footer footer"
+                ;
+
+                grid-template-columns: 30% auto;
+                grid-template-rows: 5em auto 5em;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>This is header.</h1>
+</header>
+<aside>
+    <p>This is sidebar.</p>
+</aside>
+<main>
+    <p>This is main content.</p>
+</main>
+<footer>
+    <p>This is footer.</p>
+</footer>
+</body>
+</html>
