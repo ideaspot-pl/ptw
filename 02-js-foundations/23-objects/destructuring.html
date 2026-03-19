@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Destructuring</title>
+
+    <script>
+      console.log("Destructuring arrays");
+      let items = [1, 2, 3, 4, 5];
+      const [first, second, ...rest] = items;
+      console.log(first);
+      //--> 1
+      console.log(second);
+      //--> 2
+      console.log(rest);
+      //--> [3,4,5]
+      
+      // ......
+
+      console.log("Destructuring objects");
+      let apple = {
+        name: "apple",
+        price: 3.99,
+      };
+      console.log(apple.name, apple.price);
+      //--> apple 3.99
+
+      const { name, price } = apple;
+      console.log(name);
+      //--> apple
+      console.log(price);
+      //--> 3.99
+
+      console.log("Renaming variables");
+      const { name: appleName, price: applePrice } = apple;
+      console.log(appleName);
+      //--> apple
+      console.log(applePrice);
+      //--> 3.99
+    </script>
+  </head>
+  <body></body>
+</html>

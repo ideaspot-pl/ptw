@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Destructuring</title>
+
+    <script>
+      const person = {
+        name: "Artur",
+        address: {
+          city: "Szczecin",
+        },
+      };
+
+      console.log(person.address?.city);
+      //--> Szczecin
+
+      console.log(person.contact?.phone);
+      //--> undefined
+    </script>
+  </head>
+  <body></body>
+</html>
