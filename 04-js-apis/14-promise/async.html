@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Promises</title>
+
+    <script>
+      "use strict";
+
+      async function asyncExample() {
+        const promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("After 2 seconds");
+          }, 2000);
+        });
+
+        const value = await promise;
+        console.log(value);
+        // (2, two seconds later) --> After 2 seconds
+      }
+      asyncExample();
+      console.log("Let's go!");
+      // (1) --> Let's go!
+    </script>
+  </head>
+  <body></body>
+</html>

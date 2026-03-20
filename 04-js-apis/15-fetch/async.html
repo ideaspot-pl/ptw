@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch: JSON</title>
+
+    <script>
+      (async () => {
+        const response = await fetch("./data.json");
+        console.log(response);
+        //--> [object Response]
+        console.log(response.body);
+        //--> [object ReadableStream]
+
+        const data = await response.json();
+        console.log(data);
+        //--> ["candy", "jelly-o", "chocolate", "bonbon"]
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
