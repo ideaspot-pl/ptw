@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Class</title>
+
+    <script>
+      class Animal {
+        sound;
+        #timesSpoken = 0;
+
+        constructor(sound) {
+          this.sound = sound;
+        }
+        makeSound(howMany = 1) {
+          console.log(this.sound.repeat(howMany));
+          this.#timesSpoken += howMany;
+        }
+
+        debugTimesSpoken() {
+          console.debug(`[spoken ${this.#timesSpoken} times]`);
+        }
+      }
+
+      let dog = new Animal("woof...");
+      dog.makeSound(1);
+      //--> woof...
+      dog.makeSound(2);
+      //--> woof...woof...
+      dog.debugTimesSpoken();
+      //--> [spoken 3 times]
+    </script>
+  </head>
+  <body></body>
+</html>
