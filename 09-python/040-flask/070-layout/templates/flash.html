@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Flash Page</h1>
+    <p>Click green or red!</p>
+    <nav>
+        <a class="btn btn-success" href="{{ url_for('flash_green') }}">Green</a>
+        <a class="btn btn-danger" href="{{ url_for('flash_red') }}">Red</a>
+    </nav>
+{% endblock %}
